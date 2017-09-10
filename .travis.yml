@@ -1,0 +1,6 @@
+language: php
+sudo: enabled
+install: 
+  - sudo apt-get install mono -y
+  - mono GitVersion.exe
+  - gitversion /l console /output buildserver /nofetch
