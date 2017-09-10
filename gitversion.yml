@@ -1,0 +1,7 @@
+assembly-informational-format: '{NuGetVersionV2}'
+branches:
+  features?[/-]:
+    mode: ContinuousDeployment
+  releases?[/-]:
+    mode: ContinuousDeployment
+© 2017 GitHub, Inc.
