@@ -13,4 +13,4 @@ install:
   - unzip GitVersion_4.0.0-beta0012.zip
   - mono GitVersion.exe /l console /output buildserver /nofetch
   - echo "The version is " %GitVersion_SemVer%
-  - echo %GitVersion_SemVer%
+  - echo "%GitVersion_SemVer%"
