@@ -12,7 +12,10 @@ install:
   - wget https://github.com/GitTools/GitVersion/releases/download/v4.0.0-beta.12/GitVersion_4.0.0-beta0012.zip
   - unzip GitVersion_4.0.0-beta0012.zip
   - mono GitVersion.exe /l console /output buildserver /nofetch
-  - echo "The version is " %GitVersion_SemVer%
+  - cat gitversion.properties
+  - set -o allexport
+  - source gitversion.properties
+  - echo %GitVersion_SemVer%
   - echo "%GitVersion_SemVer%"
   - echo $GitVersion_SemVer
   - echo "${GitVersion_SemVer}"
