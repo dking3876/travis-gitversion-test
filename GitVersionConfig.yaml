@@ -1,7 +1,11 @@
 next-version: 0.2.0
-assembly-informational-format: '{NuGetVersionV2}'
 branches:
-  features?[/-]:
-    mode: ContinuousDeployment
-  releases?[/-]:
-    mode: ContinuousDeployment
+    feature:
+    regex: features?[/-]
+    mode: ContinuousDelivery
+    tag: useBranchName
+    increment: Inherit
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch: false
