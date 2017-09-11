@@ -14,3 +14,8 @@ install:
   - mono GitVersion.exe /l console /output buildserver /nofetch
   - echo "The version is " %GitVersion_SemVer%
   - echo "%GitVersion_SemVer%"
+  - echo $GitVersion_SemVer
+  - echo "${GitVersion_SemVer}"
+script: true
+deploy: true
+after_script: true
