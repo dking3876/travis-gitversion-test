@@ -14,9 +14,11 @@ install:
   - mono GitVersion.exe
   - mono GitVersion.exe /output buildserver
   - ls
+  - echo GitVersion_SemVer
   - echo %GitVersion_SemVer%
   - echo "%GitVersion_SemVer%"
   - echo $GitVersion_SemVer
+  - echo ${GitVersion_SemVer}
   - echo "${GitVersion_SemVer}"
 script: true
 after_script: true
