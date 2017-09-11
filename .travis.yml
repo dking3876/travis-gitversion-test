@@ -17,5 +17,4 @@ install:
   - echo $GitVersion_SemVer
   - echo "${GitVersion_SemVer}"
 script: true
-deploy: true
 after_script: true
